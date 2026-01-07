@@ -1,0 +1,78 @@
+.page-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 60vh;
+}
+
+.info-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.info-section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.info-section:last-child {
+    border-bottom: none;
+}
+
+.info-section h3 {
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.info-section h3::before {
+    content: "";
+    width: 4px;
+    height: 18px;
+    background: var(--primary-color);
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.info-section p {
+    line-height: 1.8;
+    color: #666;
+}
+/*RWD 響應式設計*/
+/* 針對平板尺寸 (769px ~ 1024px) */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-wrap: wrap; 
+        gap: 50px;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 10px; 
+    }
+
+    .reflection-card {
+        padding: 20px 25px;
+    }
+}
+
+/* 針對手機尺寸 (768px) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap; 
+        gap: 50px;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 10px; 
+    }
+}
