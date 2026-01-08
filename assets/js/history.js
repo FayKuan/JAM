@@ -1,5 +1,4 @@
 //history order
-// 確保 HTML 載入後才執行
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.tab');
     const panels = document.querySelectorAll('.content-panel');
@@ -19,8 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetPanel = document.getElementById(targetId);
             if (targetPanel) {
                 targetPanel.classList.add('active');
-                // 如果你有用到 .style.display，也請包在這裡面
-                // targetPanel.style.display = 'block'; 
             } else {
                 console.warn(`找不到對應的面板 ID: ${targetId}`);
             }
