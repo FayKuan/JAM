@@ -1,0 +1,351 @@
+:root {
+    --primary-color: #BDA068; 
+    --text-dark: #5d3f2b;
+    --bg-light: #F9F8F6; 
+    --border-color: #E0E0E0;
+}
+
+/* 上半部佈局 */
+.top-section {
+    display: flex;
+    gap: 60px;
+    margin: 80px 150px;
+}
+
+/* 個人資料卡片 */
+.profile-card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;    
+}
+.profile-card:hover {
+    transform: scale(1.02); 
+}
+.profile-card img{
+    width:200px;
+}
+.user-name { 
+    font-size: 32px; 
+    margin-bottom: 10px; 
+}
+.user-info p {
+     font-size: 14px; 
+     margin: 5px 0; 
+     color: #555; 
+}
+.btn-text {
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #BDA068;
+}
+
+/* 評論紀錄 */
+.review-section { 
+    flex: 2; 
+}
+.review-section h2 { 
+    font-size: 22px; 
+    margin-bottom: 15px; 
+}
+.review-list a{
+    text-decoration: none;
+}
+.review-item {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;    
+}
+.review-item img{
+    width:50px;
+    padding-right: 10px;
+}
+.review-item:hover {
+    transform: scale(1.02); 
+}
+.review-content p {
+    margin: 2px 0; 
+    font-size: 14px; 
+    color:#333;
+}
+.stars { 
+    color: #BDA068; 
+    font-weight: bold; 
+}
+
+
+/* 歷史購買紀錄 */
+
+section{
+    margin:100px;
+}
+.tabs {
+    display: flex;
+    background-color: #d3c7b9;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    color: #555;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    
+}
+
+.tab.active {
+    background-color: #a58f7a;
+    color: white;
+}
+
+.tab:hover:not(.active) {
+    background-color: #c4b9ac;
+}
+
+/* --- 內容面板控制 --- */
+.content-panel {
+    display: none; 
+    animation: fadeIn 0.4s ease;
+    background-color: transparent;
+}
+
+.content-panel.active {
+    display: block; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 訂單 */
+.order {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom:20px ;
+}
+.order a{
+    text-decoration: none;
+    color:var(--text-dark)
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.order-date { 
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.order-id { 
+    color: #555; 
+    font-size: 14px; 
+}
+.order-status { 
+    color: var(--primary-color); 
+    font-weight: bold; 
+}
+
+/* 修改 Product Item 佈局以容納按鈕 */
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 左右推開 */
+    padding: 15px 0;
+}
+
+/* 將連結包裹住圖片和名稱，避免按鈕被連結包住 */
+.product-link-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.product-details { 
+    margin-left: 20px; 
+}
+.product-name { 
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+.product-spec{ 
+    color: #555; 
+    font-size: 14px; 
+}
+
+/* 右側價格與按鈕區 */
+.product-action-col {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.product-price { 
+    font-weight: bold; 
+    font-size: 18px; 
+}
+
+/* 撰寫評價按鈕樣式 */
+.btn-write-review {
+    background-color: white;
+    border: 1px solid #BDA068;
+    color: #BDA068;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+.btn-write-review:hover {
+    background-color: #BDA068;
+    color: white;
+}
+
+.order-footer {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    text-align: right;
+}
+
+.total-section { 
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-bottom: 15px; 
+}
+.total-price { 
+    font-size: 32px; 
+    color: #BDA068; 
+    margin-left: 10px; 
+}
+
+.action-buttons { 
+    display: flex; 
+    justify-content: flex-end; 
+    gap: 15px; 
+}
+.btn {
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #d3c7b9;
+    color: #555;
+    transition: 0.2s;
+}
+
+.btn:hover { 
+    background-color: #c4b9ac; 
+}
+
+/* --- 評價 Modal 樣式 --- */
+.modal { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); }
+.modal-content { background-color: #fff; margin: 10% auto; padding: 30px; border-radius: 8px; width: 90%; max-width: 500px; position: relative; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.close-btn { position: absolute; right: 15px; top: 10px; font-size: 28px; cursor: pointer; color: #888; }
+.close-btn:hover { color: #333; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: bold; color: #555; }
+.form-group select, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+.btn-submit { background-color: #8E5336; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; width: 100%; font-weight: bold; font-size: 16px; margin-top: 10px; }
+.btn-submit:hover { background-color: #72422b; }
+
+@media (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+        margin: 20px 20px;
+        gap: 30px;
+    }
+
+    .profile-card, .review-item {
+        flex: none;
+    }
+    
+    .profile-card:hover, .review-item:hover {
+        transform: none; 
+    }
+
+    section {
+        margin: 20px;
+    }
+    .tab{
+        font-size: 14px;
+    }
+    .product-item{
+        flex-direction: column; 
+        align-items: flex-start;    
+        text-align: left;      
+    }
+    .product-link-wrapper {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .product-action-col {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .product-details {
+        margin-left: 15px;          
+    }
+    .total-section{
+        align-items: center;  
+        text-align: center;       
+    }
+    .product-spec{
+        padding-bottom: 10px;
+    }
+    .user-name {
+        font-size: 24px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%; 
+    }
+
+    .order-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

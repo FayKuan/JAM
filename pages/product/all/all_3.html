@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香草白蘭地草莓 果醬 | Jamure</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/all_pg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="top">
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="logo">
+                <a href="../../../index.html"><img src="../../../assets/picture/logo/logo.png" alt="Jamure Logo"></a>
+            </div>
+            <div class="icons">
+                <li class="drop">
+                    <img src="../../../assets/picture/nav/user.png" alt="user">
+                    <ul class="dropmenu">
+                        <li><a href="../../../pages/member/login.html">會員登入</a></li>
+                        <li><a href="../../../pages/member/signin.html">會員註冊</a></li>
+                        <li><a href="../../../pages/member/info.html">會員個人資料</a></li>
+                    </ul>
+                </li>
+                <a href="../../../pages/shopping-cart.html"><img src="../../../assets/picture/nav/shopping-cart.png" alt="shopping-cart"></a>
+                <label for="search-toggle">
+                    <div>
+                        <img src="../../../assets/picture/nav/search.png" alt="search">
+                    </div>
+                </label>
+            </div>
+            <input type="checkbox" id="search-toggle" class="search-checkbox">
+            <div class="search-wrapper">
+                <div class="search-inner">
+                    <input type="text" placeholder="搜尋" class="search-input">
+                    <button class="search-btn">搜尋</button>
+                </div>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="../../../pages/member/info.html">會員中心</a></li>
+                    <li class="drop">
+                        <a href="#">產品介紹</a>
+                        <ul class="dropmenu">
+                            <li><a href="../../../pages/product/all.html">所有商品</a></li>
+                            <li><a href="../../../pages/product/season.html">季節商品</a></li>
+                            <li><a href="../../../pages/product/hot.html">熱銷商品</a></li>
+                            <li><a href="../../../pages/product/sales.html">特價商品</a></li>
+                            <li><a href="../../../pages/product/combo.html">送禮組合</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop">
+                        <a href="#">常見問題</a>
+                        <ul class="dropmenu">
+                            <li><a href="../../../pages/question/notice.html">購物須知</a></li>
+                            <li><a href="../../../pages/question/QA.html">訂單Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop">
+                        <a href="#">關於我們</a>
+                        <ul class="dropmenu">
+                            <li><a href="../../../pages/about-us/ideal.html">品牌理念</a></li>
+                            <li><a href="../../../pages/about-us/introduction.html">成員介紹</a></li>
+                            <li><a href="../../../pages/about-us/reflection.html">心得</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../pages/contact.html">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="detail-container">
+        <div class="product-intro-section">
+            <div class="p-image-area">
+                <div class="main-img-wrapper">
+                    <img src="../../../assets/picture/jam/jam3.png" alt="jam_vanilla_brandy_strawberry_01" class="main-img" id="mainImage">
+                </div>
+            </div>
+            
+            <div class="p-info-area">
+                <h1 class="pd-title">香草白蘭地草莓 果醬</h1>
+                
+                <div class="pd-desc">
+                    <p>以經典草莓果醬為基底，費時三日不同工序的製作方式，保留完整顆粒，再加入新鮮香草籽，以及白蘭地酒。無論是搭配麵包，或是點綴在冰淇淋上，都是一款口感層次豐富的大人系草莓口味！</p>
+                    <p style="margin-top: 1em; font-weight: bold; color: #555;">冬季限定的草莓，果食男子將甜蜜幸福滋味封存，讓你搶先品味草莓季節的美好！</p>
+                </div>
+                
+                <p class="pd-price">NT$290</p>
+                
+                <div class="action-row">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus" onclick="updateQty(-1)">−</button>
+                        <input type="text" value="1" class="qty-input" id="qtyInput" readonly>
+                        <button class="qty-btn plus" onclick="updateQty(1)">+</button>
+                    </div>
+
+                    <button class="btn-add-to-cart" data-id="jam_vanilla_brandy_strawberry_01">加入購物車</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="anchor-bar-wrapper">
+            <div class="anchor-bar">
+                <a href="#intro" class="anchor-link active">商品介紹</a>
+                <a href="#spec" class="anchor-link">規格說明</a>
+                <a href="#preservation" class="anchor-link">保存方式</a>
+                <a href="#reviews" class="anchor-link">評價</a>
+            </div>
+        </div>
+
+        <div class="product-details-content">
+            
+            <section id="intro" class="detail-section">
+                <h3 class="section-title">商品介紹</h3>
+                <div class="section-text">
+                    <p>每年一到冬天，就是不能錯過香甜紅透的草莓。我們選用苗栗大湖草莓產銷班的特選草莓，產地直送的品質希望大家吃得美味之外，更能吃得安心。</p>
+                    <br>
+                    <p>保留完整果實不打碎，以多日分次熬煮的方式，將草莓的色香味全部保留。單純使用砂糖與新鮮檸檬汁醃漬，更能吃出當季草莓的經典美味，以及滿滿草莓果肉的甜蜜。</p>
+                    <br>
+                    <p>而這款全新口味，我們在熬煮時加入了新鮮香草籽增加不一樣的香氣之外，還添加了白蘭地酒，讓原本甜蜜的草莓果醬升級變成大人款的風味！</p>
+                    <br>
+                    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+                    <p><strong>推薦搭配</strong></p>
+                    <ul>
+                        <li>單純抹在土司或麵包，當然貝果或司康也好適合。</li>
+                        <li>挖一匙進氣泡水裡，再加上檸檬片和薄荷葉超清爽的。</li>
+                        <li>加在冰淇淋上，真的是不可錯過的美味！</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="spec" class="detail-section">
+                <h3 class="section-title">規格說明</h3>
+                <div class="section-text">
+                    <p>150g ± 5 / 台灣本產草莓、細砂糖、海藻糖、檸檬汁、白蘭地、香草莢、柑橘果膠</p>
+                </div>
+            </section>
+
+            <section id="preservation" class="detail-section">
+                <h3 class="section-title">保存方式</h3>
+                <div class="section-text">
+                    <p><span class="badge badge-green">未開封</span> 可常溫放置陰涼處或直接冷藏，可保存約半年。</p>
+                    <div style="height: 15px;"></div>
+                    <p><span class="badge badge-orange">開封後</span> 請務必冷藏保存，建議一個月內食用完畢。</p>
+                    <p class="warning-text">✦ 請使用乾淨乾燥的器具挖取，才不會變質喔！</p>
+                </div>
+            </section>
+
+            <section id="reviews" class="detail-section reviews-container">
+                <h3 class="section-title">評價 (3)</h3>
+                
+                <div class="review-summary">
+                    <div class="average-box">
+                        <span class="score">4.9</span>
+                        <div class="stars gold">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="count">根據 3 則評論</span>
+                    </div>
+                </div>
+
+                <div class="review-list">
+                    <div class="review-item">
+                        <div class="avatar">陳</div>
+                        <div class="review-right-content">
+                            <div class="user-meta">
+                                <span class="username">陳**先生</span>
+                                <span class="date">2025年3月15日</span>
+                            </div>
+                            <div class="review-rating-row">
+                                <div class="stars gold">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>原本擔心酒味會太重，結果跟草莓的甜味融合得超級好！淡淡的白蘭地香氣讓果醬變得很高級，真的是大人系的口味，抹司康非常好吃。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="avatar">W</div>
+                        <div class="review-right-content">
+                            <div class="user-meta">
+                                <span class="username">Wang Tom</span>
+                                <span class="date">2025年2月20日</span>
+                            </div>
+                            <div class="review-rating-row">
+                                <div class="stars gold">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>在果醬加入白蘭地酒意外的很搭，提升了草莓果醬的層次卻不搶戲</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="avatar">K</div>
+                        <div class="review-right-content">
+                            <div class="user-meta">
+                                <span class="username">Kevin Wu</span>
+                                <span class="date">2025年1月10日</span>
+                            </div>
+                            <div class="review-rating-row">
+                                <div class="stars gold">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>很喜歡這款的層次感，入口先是草莓的酸甜，接著是香草的溫潤香氣，尾韻帶點微醺的酒香。費時熬煮的果肉口感真的很棒。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contactus">
+            <p><strong>聯絡我們</strong></p>
+            <p>客服專線：03-98765421</p>
+            <a href="mailto:service@jamure.com">客服信箱：service@jamure.com</a>
+            <p>客服時間：週一至週六 AM 9:00 - PM 7:00</p>
+            <p>服務項目：商品諮詢、配送問題、退換貨服務</p>
+        </div>
+        <div class="service">
+            <p><strong>服務</strong></p>
+            <a href="../../member/info.html">會員中心</a>
+            <a href="../../question/QA.html">常見問題</a>
+            <a href="../../about-us/ideal.html">品牌理念</a>
+            <a href="../../about-us/reflection.html">心得</a>
+        </div>
+        <div class="logo-bottom">
+            <a href="../../../index.html"><img src="../../../assets/picture/logo/logo-bottom.png" alt="Jamure Logo-bottom"></a>
+            <p> &copy; 2025 JAMURE All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

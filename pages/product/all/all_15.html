@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>薄荷馬告草莓 果醬 | Jamure</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/all_pg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="top">
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="logo">
+                <a href="../../../index.html"><img src="../../../assets/picture/logo/logo.png" alt="Jamure Logo"></a>
+            </div>
+            <div class="icons">
+                <li class="drop">
+                    <img src="../../../assets/picture/nav/user.png" alt="user">
+                    <ul class="dropmenu">
+                        <li><a href="../../../pages/member/login.html">會員登入</a></li>
+                        <li><a href="../../../pages/member/signin.html">會員註冊</a></li>
+                        <li><a href="../../../pages/member/info.html">會員個人資料</a></li>
+                    </ul>
+                </li>
+                <a href="../../../pages/shopping-cart.html"><img src="../../../assets/picture/nav/shopping-cart.png" alt="shopping-cart"></a>
+                <label for="search-toggle">
+                    <div>
+                        <img src="../../../assets/picture/nav/search.png" alt="search">
+                    </div>
+                </label>
+            </div>
+            <input type="checkbox" id="search-toggle" class="search-checkbox">
+            <div class="search-wrapper">
+                <div class="search-inner">
+                    <input type="text" placeholder="搜尋" class="search-input">
+                    <button class="search-btn">搜尋</button>
+                </div>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="../../../pages/member/info.html">會員中心</a></li>
+                    <li class="drop">
+                        <a href="#">產品介紹</a>
+                        <ul class="dropmenu">
+                            <li><a href="../../../pages/product/all.html">所有商品</a></li>
+                            <li><a href="../../../pages/product/season.html">季節商品</a></li>
+                            <li><a href="../../../pages/product/hot.html">熱銷商品</a></li>
+                            <li><a href="../../../pages/product/sales.html">特價商品</a></li>
+                            <li><a href="../../../pages/product/combo.html">送禮組合</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop">
+                        <a href="#">常見問題</a>
+                        <ul class="dropmenu">
+                            <li><a href="../../../pages/question/notice.html">購物須知</a></li>
+                            <li><a href="../../../pages/question/QA.html">訂單Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop">
+                        <a href="#">關於我們</a>
+                        <ul class="dropmenu">
+                            <li><a href="../../../pages/about-us/ideal.html">品牌理念</a></li>
+                            <li><a href="../../../pages/about-us/introduction.html">成員介紹</a></li>
+                            <li><a href="../../../pages/about-us/reflection.html">心得</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../pages/contact.html">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="detail-container">
+        <div class="product-intro-section">
+            <div class="p-image-area">
+                <div class="main-img-wrapper">
+                    <img src="../../../assets/picture/jam/jam15.png" alt="jam_mint_magao_strawberry_01" class="main-img" id="mainImage">
+                </div>
+            </div>
+            
+            <div class="p-info-area">
+                <h1 class="pd-title">薄荷馬告草莓 果醬</h1>
+                
+                <div class="pd-desc">
+                    <p>以經典草莓果醬為基底，加入些許薄荷葉和新鮮野生馬告，或許剛吃下時不一定特別感受到，但如果舌尖磨到這些香料香草後，富有層次及淡淡檸檬香氣的辛香味，真的很吸引人！</p>
+                    <p style="margin-top: 1em; font-weight: bold; color: #555;">冬季限定的草莓，果食男子將甜蜜幸福滋味封存，讓你搶先品味草莓季節的美好！</p>
+                </div>
+                
+                <p class="pd-price">NT$290</p>
+                
+                <div class="action-row">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus" onclick="updateQty(-1)">−</button>
+                        <input type="text" value="1" class="qty-input" id="qtyInput" readonly>
+                        <button class="qty-btn plus" onclick="updateQty(1)">+</button>
+                    </div>
+
+                    <button class="btn-add-to-cart" data-id="jam_mint_magao_strawberry_01">加入購物車</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="anchor-bar-wrapper">
+            <div class="anchor-bar">
+                <a href="#intro" class="anchor-link active">商品介紹</a>
+                <a href="#spec" class="anchor-link">規格說明</a>
+                <a href="#preservation" class="anchor-link">保存方式</a>
+                <a href="#reviews" class="anchor-link">評價</a>
+            </div>
+        </div>
+
+        <div class="product-details-content">
+            
+            <section id="intro" class="detail-section">
+                <h3 class="section-title">商品介紹</h3>
+                <div class="section-text">
+                    <p>每年一到冬天，就是不能錯過香甜紅透的草莓。</p>
+                    <br>
+                    <p>我們選用苗栗大湖草莓產銷班的特選草莓，產地直送的品質希望大家吃得美味之外，更能吃得安心。</p>
+                    <br>
+                    <p>保留完整果實不打碎，以多日分次熬煮的方式，將草莓的色香味全部保留。單純使用砂糖與新鮮檸檬汁醃漬，更能吃出當季草莓的經典美味，以及滿滿草莓果肉的甜蜜。</p>
+                    <br>
+                    <p>而薄荷馬告草莓果醬是以經典草莓果醬為基底，加入些許薄荷葉和台灣野生馬告，或許剛吃下時不一定特別感受到，但如果舌尖磨到這些香草和香料後，那帶些檸檬香又有點嗆辣的口感看似衝突，入口卻十分和諧。</p>
+                    <br>
+                    <p>這個口味是原本其中一個熱銷口味「薄荷胡椒草莓」果醬的升級版，如果你喜歡薄荷胡椒草莓果醬的話，這款新口味你一定會更愛！</p>
+                    <br>
+                    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+                    <p><strong>推薦搭配</strong></p>
+                    <ul>
+                        <li>單純抹在土司或麵包，當然貝果或司康也好適合。</li>
+                        <li>挖一匙進氣泡水裡，再加上檸檬片和薄荷葉超清爽的。</li>
+                        <li>加在優格乳裡，滿滿的果肉，全家大小都很喜歡。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="spec" class="detail-section">
+                <h3 class="section-title">規格說明</h3>
+                <div class="section-text">
+                    <p>150g ± 5 / 台灣本產草莓、細砂糖、海藻糖、檸檬汁、柑橘果膠、台灣野生馬告、薄荷葉</p>
+                </div>
+            </section>
+
+            <section id="preservation" class="detail-section">
+                <h3 class="section-title">保存方式</h3>
+                <div class="section-text">
+                    <p><span class="badge badge-green">未開封</span> 可常溫放置陰涼處或直接冷藏，可保存約半年。</p>
+                    <div style="height: 15px;"></div>
+                    <p><span class="badge badge-orange">開封後</span> 請務必冷藏保存，建議一個月內食用完畢。</p>
+                    <p class="warning-text">✦ 請使用乾淨乾燥的器具挖取，才不會變質喔！</p>
+                </div>
+            </section>
+
+            <section id="reviews" class="detail-section reviews-container">
+                <h3 class="section-title">評價 (3)</h3>
+                
+                <div class="review-summary">
+                    <div class="average-box">
+                        <span class="score">4.9</span>
+                        <div class="stars gold">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="count">根據 3 則評論</span>
+                    </div>
+                </div>
+
+                <div class="review-list">
+                    <div class="review-item">
+                        <div class="avatar">劉</div>
+                        <div class="review-right-content">
+                            <div class="user-meta">
+                                <span class="username">劉**小姐</span>
+                                <span class="date">2025年3月2日</span>
+                            </div>
+                            <div class="review-rating-row">
+                                <div class="stars gold">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>原本很難想像馬告跟草莓的組合，結果意外的搭！咬到馬告顆粒時迸發的檸檬香氣跟草莓的甜味融合得很好，非常有層次的大人味果醬。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="avatar">W</div>
+                        <div class="review-right-content">
+                            <div class="user-meta">
+                                <span class="username">Wang Daniel</span>
+                                <span class="date">2025年2月18日</span>
+                            </div>
+                            <div class="review-rating-row">
+                                <div class="stars gold">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>我是薄荷胡椒草莓的粉絲，這款升級版真的更棒了！馬告的香氣比胡椒更清爽，加上薄荷的涼感，吃起來很驚艷，抹在剛烤好的吐司上超好吃。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="avatar">楊</div>
+                        <div class="review-right-content">
+                            <div class="user-meta">
+                                <span class="username">楊**先生</span>
+                                <span class="date">2025年1月25日</span>
+                            </div>
+                            <div class="review-rating-row">
+                                <div class="stars gold">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>很特別的口味，草莓果肉很多，馬告的味道是隱隱約約的，不會搶過草莓的風采，反而有畫龍點睛的效果。加在氣泡水裡很清爽好喝。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contactus">
+            <p><strong>聯絡我們</strong></p>
+            <p>客服專線：03-98765421</p>
+            <a href="mailto:service@jamure.com">客服信箱：service@jamure.com</a>
+            <p>客服時間：週一至週六 AM 9:00 - PM 7:00</p>
+            <p>服務項目：商品諮詢、配送問題、退換貨服務</p>
+        </div>
+        <div class="service">
+            <p><strong>服務</strong></p>
+            <a href="../../member/info.html">會員中心</a>
+            <a href="../../question/QA.html">常見問題</a>
+            <a href="../../about-us/ideal.html">品牌理念</a>
+            <a href="../../about-us/reflection.html">心得</a>
+        </div>
+        <div class="logo-bottom">
+            <a href="../../../index.html"><img src="../../../assets/picture/logo/logo-bottom.png" alt="Jamure Logo-bottom"></a>
+            <p> &copy; 2025 JAMURE All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

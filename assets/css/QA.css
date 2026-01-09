@@ -1,0 +1,72 @@
+.page-container { 
+    max-width: 900px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+    min-height: 60vh; 
+}
+
+.qa-title { 
+    text-align: center; 
+    color: var(--primary-color); 
+    margin-bottom: 40px; 
+}
+
+/* FAQ 風琴式選單樣式 */
+.faq-item { 
+    background: #fff; 
+    margin-bottom: 15px; 
+    border: 1px solid var(--border-color); 
+    border-radius: 8px; overflow: hidden; 
+}
+
+summary { 
+    padding: 20px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    list-style: none; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    color: var(--text-dark); 
+}
+
+summary:hover { 
+    background-color: #fcfbf9; 
+}
+
+summary::after { 
+    content: '＋'; 
+    color: var(--primary-color); 
+    font-size: 20px; 
+}
+
+details[open] summary::after { 
+    content: '－'; 
+}
+
+details p { 
+    padding: 0 20px 20px; 
+    color: #666; 
+    border-top: 1px solid #f9f9f9; 
+    padding-top: 15px; 
+    line-height: 1.6; 
+    margin: 0; 
+}
+
+
+/*RWD 響應式設計*/
+/* 針對平板尺寸 (769px ~ 1024px) */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-wrap: wrap; 
+        gap: 50px;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 10px; 
+    }
+
+    .reflection-card {
+        padding: 20px 25px;
+    }
+}
